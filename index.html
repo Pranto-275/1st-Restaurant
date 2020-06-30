@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>1st Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="MY1stTemplate.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+        .nav-link {
+            color: white !important;
+        }
+
+        .mynav a {
+            margin-right: 10px;
+        }
+
+        .mynav a:hover {
+
+            color: red !important;
+        }
+
+        .carousel-caption {
+            width: 625px;
+            z-index: 10;
+            color: #fff;
+            text-align: left;
+            top: 30%;
+            left: 15%;
+            bottom: auto;
+
+            transform: translate(0, -50%);
+        }
+
+        .bg1 {
+            background-color: lavender;
+        }
+
+        .card {
+            border: 0;
+        }
+
+
+        .my1 {
+            text-align: center;
+            font-weight: 300;
+            padding-bottom: 50px;
+            font-weight: bold;
+
+        }
+
+        .bg-dark {
+            background: transparent !important;
+            transition: .5s ease-out;
+        }
+
+        .bg-dark.scrolled {
+            background: rgb(26, 25, 25) !important;
+        }
+
+        .text {
+            text-align: justify-all;
+
+        }
+
+        .map-container {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 100px;
+        }
+
+        .map-container iframe {
+            left: 0;
+            top: 50px;
+            height: 65%;
+            width: 100%;
+            position: absolute;
+        }
+
+        input[type=text] {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid gray;
+        }
+
+        input[type=text] {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid gray;
+        }
+
+        textarea {
+            border: none;
+            border-bottom: 1px solid gray;
+        }
+
+        .bor {
+            border-top: 1px solid gray;
+        }
+
+        .img1 {
+            border-radius: 15px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark mynav ">
+        <div class="navbar-brand " style="font-family: anton; font-weight:normal;">Eatery <span style="color: red">.</span> cafe</div>
+
+        <button class="navbar-toggler" data-target="#pranto" data-toggle="collapse" style="font-family: anton">
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+        <div class="collpase navbar-collapse justify" id="pranto">
+            <ul class="navbar-nav ml-auto ">
+                <li class="nav-item">
+                    <a href="#" class="nav-link" style="font-family: inherit; font-weight:bold;">HOME</a>
+                </li>
+                <li class="nav-item" style="font-family: inherit; font-weight:bold;">
+                    <a href="#" class="nav-link">ABOUT</a>
+                </li>
+                <li class="nav-item" style="font-family: inherit; font-weight:bolder;">
+                    <a href="#" class="nav-link">CHEF</a>
+                </li>
+                <li class="nav-item" style="font-family: inherit; font-weight:bolder;">
+                    <a href="#" class="nav-link">MENU</a>
+                </li>
+                <li class="nav-item" style="font-family: inherit; font-weight:bolder;">
+                    <a href="#" class="nav-link">CONTACT</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto navbar-dark" style="font-family: inherit; font-weight:bolder;">
+                <li class="nav-item">
+                    <a href="#" class="nav-link ">Call NOW!0100200340</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="btn btn-danger navlink">Researve a table</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/slider-image1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption " style="align-content: flex-start">
+                        <h6>EATERY CAFE &amp; RESTAURANT</h6>
+                        <h2>Our missionis to provide an unforgettanble experience</h2>
+                        <button class="btn btn-danger mr-2" type="button">Meet our chef</button>
+                    </div>
+                </div>
+                <div class="carousel-item" style="align-content: flex-start">
+                    <img src="images/slider-image2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption ">
+                        <span>
+                            <h6>EATERY CAFE &amp; RESTAURANT</h6>
+                        </span>
+                        <h2>Our missionis to provide an unforgettanble experience</h2>
+                        <button class="btn btn-danger" type="button">Meet our chef</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slider-image3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption " style="align-content: flex-start">
+                        <h6>EATERY CAFE &amp; RESTAURANT</h6>
+                        <h2>Our missionis to provide an unforgettanble experience</h2>
+                        <button class="btn btn-danger" type="button">Meet our chef</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/testimonial-bg.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption " style="align-content: flex-start">
+                        <h6>EATERY CAFE &amp; RESTAURANT</h6>
+                        <h2>Our missionis to provide an unforgettanble experience</h2>
+                        <button class="btn btn-danger" type="button">Meet our chef</button>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-text">
+                            <small>READ OUR STORY</small>
+                        </div>
+
+                        <div class="card-title">
+                            <h3>We've been Making The
+                                Delicious Foods Since 1999</h3>
+                        </div>
+                        <div class="card-text">
+                            Fusce hendrerit malesuada lacinia. Donec semper semper sem vitae malesuada. Proin scelerisque risus et ipsum semper molestie sed in nisi. Ut rhoncus congue lectus, rhoncus venenatis leo malesuada id.
+
+                            Sed elementum vel felis sed scelerisque. In arcu diam, sollicitudin eu nibh ac, posuere tristique magna. You can use this template for your cafe or restaurant website. Please tell your friends about templatemo. Thank you.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/about-image.jpg" alt="" class=img-fluid>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="jumbotron">
+            <div class="container">
+                <div class="my1">
+                    <h2><b>Meet our chefs</b></h2>
+                    <p1><small>THEY ARE NICE &amp; FRIENDLY</small></p1>
+                </div>
+                <div class="card-deck">
+                    <div class="card bg1">
+                        <img src="images/team-image1.jpg" alt="" class="img-fluid">
+                        <div class="card-body text-center">
+
+                            <div class="card-title">
+                                <h4 style="font-weight: bolder; ">New catherine</h4>
+                            </div>
+                            <div class="card-text">
+                                <p style="font-weight: lighter;"><small>KITCHEN OFFICER</small></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="card bg1">
+                        <img src="images/team-image2.jpg" alt="" class="img-fluid">
+                        <div class="card-body text-center">
+
+                            <div class="card-title">
+                                <h4 style="font-weight: bolder; ">Lindsay Perlen</h4>
+                            </div>
+                            <div class="card-text">
+                                <p style="font-weight: lighter;"><small>OWNER &amp; MANAGER</small></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="card bg1">
+                        <img src="images/team-image3.jpg" alt="" class="img-fluid">
+                        <div class="card-body text-center">
+
+                            <div class="card-title">
+                                <h4 style="font-weight: bolder; ">Isabella grace</h4>
+                            </div>
+                            <div class="card-text">
+                                <p style="font-weight: lighter;"><small>PIZZA SPECIALIST</small></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section>
+
+        <div class="my1">
+            <h2><b>Our Menus</b></h2>
+            <p1><small>TEA TIME &amp; DINING</small></p1>
+        </div>
+        <div class="card-group">
+            <div class="card">
+                <img src="images/menu-image1.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="card">
+                <img src="images/menu-image2.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="card">
+                <img src="images/menu-image3.jpg" alt="" class="img-fluid">
+            </div>
+
+        </div>
+        <div class="card-group">
+            <div class="card">
+                <img src="images/menu-image4.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="card">
+                <img src="images/menu-image5.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="card">
+                <img src="images/menu-image6.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/bk.png" width="1500" height="450" alt="...">
+                    <div class="carousel-caption d-none d-md-block text">
+                        <h4 style="text-align: center"><b>Testimonials</b></h4>
+                        <p>Michel,<br>
+
+                            Thank you for dinner last night. It was amazing!! I have to say it’s the best meal I have had in quite some time. You will definitely be seeing more of me eating at your establishment. I can’t wait for our frend to come visit so that we can share our new favorite place with them. <br>
+
+                            "Bruce Wayne" </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/bk.png" width="1500" height="450">
+                    <div class="carousel-caption d-none d-md-block" text>
+                        <h4 style="text-align: center"><b>Testimonials</b></h4>
+                        <p>Hi Michel,<br>
+
+                            My friend and I were at the French Gourmet last night for dinner. I want to thank you and the rest of the staff for the excellent food and service provided. It was our first visit and we both agreed that it was a wonderful experience.
+                            Thanks again for the hospitality <br>
+
+                            "Carl kant"</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/bk.png" width="1400" height="450">
+                    <div class="carousel-caption d-none d-md-block" text>
+                        <h4 style="text-align: center"><b>Testimonials</b></h4>
+                        <p>Hi Guys,<br>
+
+                            I wanted to thank you for inviting me down for that amazing dinner the other night. The food was extraordinary. You have a great culinary team! The guests were lovely, and were very loyal followers of The French Gourmet. It’s obvious that you really treat your customers like family. <br>
+
+                            "Nathan Rand" <br>
+                            "Kelly O'brain" <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </section>
+    <section>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.3803096451475!2d90.32087201436315!3d23.98234388579426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755dd141e162261%3A0x4153a6e1487c2316!2sKashimpur%20High%20School!5e0!3m2!1sen!2sbd!4v1593457124917!5m2!1sen!2sbd" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <form style="padding: 50px;width: 100%">
+                        <label for="info">
+                            <h1>Contact Us</h1>
+                        </label>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control mb-3" id="flname" placeholder="Full name" name="flname">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control mb-3" placeholder="Email address" name="email">
+                            </div>
+                        </div>
+
+                        <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
+                        <textarea name="project" id="project" cols="55" rows="10" placeholder="Tell about your projectd"></textarea>
+                        <button class="btn btn-danger" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class=" bor">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3" style="padding:40px;">
+                        <h3 style="font-weight: 700;font-size: 25px;">Find us</h3>
+                        <p style="font-size: 15px; color:gray;">180 S Clinton Ave, Rochester, NY 14604 <br> United States</p>
+                    </div>
+                    <div class="col-md-3" style="padding:40px;">
+                        <h3 style="font-weight: 700;font-size: 25px;">Reservation </h3>
+                        <p style="font-size: 15px;color:gray;">090-080-0650|090-070-0430 <br>
+                            info@company.com <br>
+                            LINE: eatery247</p>
+                    </div>
+                    <div class="col-md-3" style="padding-top: 25px;">
+                        <div class="card">
+                            <img src="images/footer-open-hour-bg.jpg" alt="" class="img-fluid img1 ">
+                            <div class="card-img-overlay text-center " style="color: white;">
+                                <div class="card-title">
+                                    <h3>Open Hours</h3>
+                                </div>
+                                <p style="font-size: 15px; color:white;">Monday:Closed</p>
+                                <p style="font-size: 15px; color:white;">Tuesday to Friday</p>
+                                <p style="font-size: 15px; color:white;">7:00 AM - 9:00 PM</p>
+                                <p style="font-size: 15px; color:white;">Saturday - Friday</p>
+                                <p style="font-size: 15px; color:white;">11:00 AM - 10:00 PM</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3" style="padding:40px;">
+                        <i class="fab fa-facebook-square" style="padding: 12px;color: red;"></i>
+                        <i class="fab fa-twitter" style="padding: 12px;color: red"></i>
+                        <i class="fab fa-instagram" style="padding: 12px;color: red"></i>
+                        <i class="fab fa-google" style="padding: 12px;color: red"></i>
+                        <p style="font-size: 15px;color: gray;">Copyright &#169; 2018 <br>
+                            Your Company Name <br></p>
+                        <p style="color: gray;">Design: templateMo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script>
+        $(window).scroll(function() {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+        });
+    </script>
+
+</body>
+
+</html>
